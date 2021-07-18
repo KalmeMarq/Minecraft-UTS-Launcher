@@ -1,3 +1,36 @@
-img {
-  width: 48px;
+@font-face {
+  font-family: 'Minecraft';
+  src: url('./assets/fonts/Minecraft.ttf');
+}
+
+@font-face {
+  font-family: 'MinecraftTen';
+  src: url('./assets/fonts/MinecraftTen.ttf');
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('./assets/fonts/NotoSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'NotoSansBold';
+  src: url('./assets/fonts/NotoSans-Bold.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+}
+
+#root {
+  overflow: hidden;
+  height: 100vh;
+  color: white;
 }

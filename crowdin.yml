@@ -1,0 +1,6 @@
+base_path: /src/renderer/assets
+base_url: 'https://api.crowdin.com'
+preserve_hierarchy: false
+files:
+  - source: /locales/en-US.csv
+    translation: /locales/%locale%.csv
