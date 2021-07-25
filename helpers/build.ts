@@ -1,11 +1,11 @@
 const del = require('del')
-import webpack from 'webpack'
+const webpack = require('webpack')
 const Multispinner = require('multispinner')
 
-const mainConfig = require('./configs/webpack.main.config.ts')
-const preloadConfig = require('./configs/webpack.preload.config.ts')
-const rendererConfig = require('./configs/webpack.renderer.config.ts')
-const webConfig = require('./configs/webpack.web.config.ts')
+const mainConfig = require('./configs/webpack.main.config.js')
+const preloadConfig = require('./configs/webpack.preload.config.js')
+const rendererConfig = require('./configs/webpack.renderer.config.js')
+const webConfig = require('./configs/webpack.web.config.js')
 
 class Builder {
   static main() {

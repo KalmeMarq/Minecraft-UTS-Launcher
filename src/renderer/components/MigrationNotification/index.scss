@@ -1,0 +1,98 @@
+.migra-notification {
+  position: relative;
+  background: hsl(210, 1%, 29%);
+  color: white;
+  border-top: 1px solid hsl(240, 0%, 43%);
+
+  &.hide {
+    pointer-events: none;
+    display: none;
+  }
+
+  display: flex;
+  flex-direction: row;
+
+  span {
+    font-family: 'NotoSansOg';
+    padding: 0.5rem 1rem;
+    padding-left: 0.4rem;
+    font-size: 0.9rem;
+    width: 90%;
+    font-weight: 200;
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    background: none;
+    padding: 0 0.6rem;
+    color: white;
+    font-size: 1.9rem;
+    font-family: initial;
+    font-weight: 100;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: none;
+    outline: none;
+    display: grid;
+    height: 100%;
+    place-items: center;
+    place-content: center;
+    display: grid;
+    place-content: center;
+    place-items: center;
+
+    img {
+      width: 13px;
+    }
+
+    &:hover {
+      background: hsla(0, 0%, 50%, 0.3);
+    }
+
+    &:focus {
+      background: hsla(0, 0%, 50%, 0.3);
+    }
+  }
+
+  a {
+    font-family: 'NotoSansBoldOg';
+    font-size: 0.9rem;
+    color: white;
+    text-decoration-color: white;
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    place-items: center;
+
+    &:hover {
+      background: hsl(0, 0%, 35%);
+    }
+
+    &:after {
+      position: relative;
+      top: -10px;
+      left: -3px;
+      display: inline-block;
+      content: url(../../assets/others/external.svg);
+      width: 14px;
+      height: 0px;
+      transform: scale(0.6);
+      padding: 0 0.1rem;
+      image-rendering: pixelated;
+    }
+  }
+
+  .info-ic {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    padding-left: 0.6rem;
+
+    img {
+      width: 24px;
+    }
+  }
+}

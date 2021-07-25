@@ -1,10 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+@font-face {
+  font-family: 'Minecraft';
+  src: url('./assets/fonts/Minecraft.ttf');
+}
+
+@font-face {
+  font-family: 'MinecraftTen';
+  src: url('./assets/fonts/new/MinecraftTen.eot'); 
+  src: url('./assets/fonts/new/MinecraftTen.eot?#iefix') format('embedded-opentype'),
+       url('./assets/fonts/new/MinecraftTen.woff') format('woff'), 
+       url('./assets/fonts/new/MinecraftTen.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('./assets/fonts/new/NotoSans-Regular.eot');
+  src:
+    local("Noto Sans"),
+    local("NotoSans"),
+    url('./assets/fonts/new/NotoSans-Regular.eot?#iefix') format("embedded-opentype"),
+    url('./assets/fonts/new/NotoSans-Regular.woff2') format("woff2"),
+    url('./assets/fonts/new/NotoSans-Regular.woff') format("woff"),
+    url('./assets/fonts/new/NotoSans-Regular.ttf') format("truetype"),
+    url('./assets/fonts/new/NotoSans-Regular.svg#NotoSans-Regular') format("svg");
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+  
+@font-face {
+  font-family:'Noto Sans Bold';
+  src: url('./assets/fonts/new/NotoSans-Bold.eot');
+  src:
+    local("Noto Sans Bold"),
+    local("NotoSans-Bold"),
+    url('./assets/fonts/new/NotoSans-Bold.eot?#iefix') format("embedded-opentype"),
+    url('./assets/fonts/new/NotoSans-Bold.woff2') format("woff2"),
+    url('./assets/fonts/new/NotoSans-Bold.woff') format("woff"),
+    url('./assets/fonts/new/NotoSans-Bold.ttf') format("truetype"),
+    url('./assets/fonts/new/NotoSans-Bold.svg#NotoSans-Bold') format("svg");
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family:'Noto Sans Italic';
+  src: url('./assets/fonts/new/NotoSans-Italic.eot');
+  src: 
+    local("Noto Sans Italic"),
+    local("NotoSans-Italic"),
+    url('./assets/fonts/new/NotoSans-Italic.eot?#iefix') format("embedded-opentype"),
+    url('./assets/fonts/new/NotoSans-Italic.woff2') format("woff2"),
+    url('./assets/fonts/new/NotoSans-Italic.woff') format("woff"),
+    url('./assets/fonts/new/NotoSans-Italic.ttf') format("truetype"),
+    url('./assets/fonts/new/NotoSans-Italic.svg#NotoSans-Italic') format("svg");
+  font-style: italic;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family:'Noto Sans Bold Italic';
+  src: url('./assets/fonts/new/NotoSans-BoldItalic.eot');
+  src: 
+    local("Noto Sans Bold Italic"),
+    local("NotoSans-BoldItalic"),
+    url('./assets/fonts/new/NotoSans-BoldItalic.eot?#iefix') format("embedded-opentype"),
+    url('./assets/fonts/new/NotoSans-BoldItalic.woff2') format("woff2"),
+    url('./assets/fonts/new/NotoSans-BoldItalic.woff') format("woff"),
+    url('./assets/fonts/new/NotoSans-BoldItalic.ttf') format("truetype"),
+    url('./assets/fonts/new/NotoSans-BoldItalic.svg#NotoSans-BoldItalic') format("svg");
+  font-style: italic;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
+.App {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  flex-direction: row;
+  background: #333333;
+}
+
+h1, h2, h3 {
+  user-select: none;
+}
+
+::selection {
+  background: hsl(130, 80%, 20%);
+}
+
 ::-webkit-scrollbar {
   background: #252525;
-  width: 7px;
+  width: 9px;
 }
 
 ::-webkit-scrollbar-track {
   background: #252525;
+  width: 9px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -13,10 +112,4 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555555;
-}
-
-.App {
-  display: flex;
-  flex-direction: row;
-  // height: 100%;
 }

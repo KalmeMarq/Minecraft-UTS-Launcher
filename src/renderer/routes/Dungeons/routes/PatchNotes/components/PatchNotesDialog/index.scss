@@ -1,0 +1,111 @@
+.patch-dialog {
+  background: hsl(0, 0%, 19%);
+  display: flex;
+  flex-direction: column;
+
+  &-header {
+    border: 1px solid hsl(0, 0%, 22%);
+    height: 60px;
+    text-align: center;
+    color: white;
+    font-family: 'Noto Sans Bold';
+    font-size: 0.55rem;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+
+  &-cont {
+    overflow-y: auto;
+  }
+
+  &-exit-btn {
+    outline: none;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    width: 34px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    height: 34px;
+    color: white;
+    border-radius: 50%;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background: hsl(0, 0%, 35%);
+    }
+  }
+}
+
+.patch-dialog-container {
+  width: 790px;
+  margin: auto;
+
+  h1 {
+    font-family: 'Noto Sans Bold';
+    color: white;
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-family: 'Noto Sans Bold';
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-family: 'Noto Sans';
+    font-size: 12px;
+    color: white;
+    padding: 1rem 0;
+  }
+
+  li {
+    font-family: 'Noto Sans';
+    font-size: 0.9rem;
+    color: white;
+    padding: 0.1rem;
+  }
+
+  a {
+    font-family: 'Noto Sans Bold';
+    font-size: 12px;
+    color: white;
+    text-decoration-color: white;
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    place-items: center;
+
+    &:hover {
+      background: hsl(0, 0%, 35%);
+    }
+
+    &:after {
+      position: relative;
+      top: -10px;
+      left: -3px;
+      display: inline-block;
+      content: url(../../../../../../assets/others/external.svg);
+      width: 14px;
+      height: 0px;
+      transform: scale(0.6);
+      padding: 0 0.1rem;
+      image-rendering: pixelated;
+    }
+  }
+
+  ul {
+    padding: 0.6rem 1rem;
+    margin-left: 25px;;
+  }
+}

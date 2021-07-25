@@ -1,0 +1,127 @@
+.help-dialog {
+  background: hsl(0, 0%, 19%);
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+
+  &-header {
+    border: 1px solid hsl(0, 0%, 22%);
+    height: 60px;
+    text-align: center;
+    color: white;
+    font-family: 'Noto Sans Bold';
+    font-size: 0.55rem;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+
+  &-cont {
+    overflow-y: auto;
+  }
+
+  &-exit-btn {
+    outline: none;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    width: 34px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    height: 34px;
+    color: white;
+    border-radius: 50%;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background: hsl(0, 0%, 35%);
+    }
+  }
+}
+
+.help-dialog-container {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+
+  h2 {
+    color: hsl(0, 0%, 67%);
+    font-family: 'Noto Sans Bold';
+    text-transform: uppercase;
+    font-size: 0.9em;
+    padding: 0.4rem 0;
+    padding-top: 1.2rem;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    width: 100%;
+    
+    a {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding: 0.5rem 0;
+      height: 100%;
+      color: white;
+      font-family: 'Noto Sans';
+      outline: none;
+      font-size: 1rem;
+      text-decoration: none;
+       
+      &:focus {
+        background: hsl(0, 0%, 36%);
+      }
+
+      &:hover {
+        background: hsl(150, 100%, 26%);
+
+        &:after {
+          position: absolute;
+          display: inline-block;
+          content: url(../../assets/others/external.svg);
+          width: 0px;
+          top: 6px;
+          height: 10px;
+          transform: scale(0.6);
+          padding: 0 0.1rem;
+          image-rendering: pixelated;
+        }
+      }
+     
+    }
+
+    .help-item {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding: 0.5rem 0;
+      height: 100%;
+      color: white;
+      font-family: 'Noto Sans';
+      outline: none;
+      font-size: 1rem;
+      text-decoration: none;
+      cursor: pointer; 
+
+      &:focus {
+        background: hsl(0, 0%, 36%);
+      }
+
+      &:hover {
+        background: hsl(150, 100%, 26%);
+      }
+     
+    }
+  }
+}

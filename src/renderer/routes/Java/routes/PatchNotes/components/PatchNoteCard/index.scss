@@ -1,0 +1,40 @@
+.patch-item {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  box-shadow: 0 4px 4px 0 #00000044;
+  transition: opacity 300ms;
+  animation: animOpac 300ms;
+
+  img {
+    width: auto;
+    height: auto;
+  }
+
+  .patch-cont {
+    background: hsl(0, 0%, 7%);
+    height: 80px;
+    color: white;
+    padding: 0.6rem 0.9rem;
+
+    p {
+      font-family: 'Noto Sans Bold';
+      font-size: 1rem;
+    }
+  }
+
+  cursor: pointer;
+
+  &:hover .patch-cont {
+    background: hsl(0, 0%, 15%);
+  }
+}
+
+@keyframes animOpac {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

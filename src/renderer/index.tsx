@@ -1,59 +1,46 @@
 import { TranslationProvider } from '@mojang/t-component';
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import en from './assets/locales/langs/en-US.json';
+import pt from './assets/locales/langs/pt-PT.json';
 import './index.scss';
 
-const translations = [
-  {
-    domain: 'messages',
-    locale_data: {
-      messages: {
-        '': {
-          domain: 'messages',
-          lang: 'en-US',
-          plural_forms: 'nplurals=2; plural=(n != 1);',
-        },
-        News: ['News'],
-        Settings: ['Settings'],
-        Play: ['Play'],
-        Installations: ['Installations'],
-        Skins: ['Skins'],
-        PatchNotes: ['Patch notes']
+let enUS = {
+  domain: 'messages',
+  locale_data: Object.assign({
+    messages: {
+      '': {
+        domain: 'messages',
+        lang: 'en-US',
+        plural_forms: 'nplurals=2; plural=(n != 1);',
       }
     }
   },
-  {
-    domain: 'mensagens',
-    locale_data: {
-      mensagens: {
-        '': {
-          domain: 'mensagens',
-          lang: 'pt-PT',
-          plural_forms: 'nplurals=2; plural=(n != 1);',
-        },
-        News: ['Notícias'],
-        Settings: ['Definições'],
-        Play: ['Jogar'],
-        Installations: ['Instalações'],
-        Skins: ['Skins'],
-        PatchNotes: ['Notas de lançamento']
+  en)
+}
+
+let ptPT = {
+  domain: 'messages',
+  locale_data: Object.assign({
+    messages: {
+      '': {
+        domain: 'messages',
+        lang: 'pt-PT',
+        plural_forms: 'nplurals=2; plural=(n != 1);',
       }
     }
-  }
-]
+  },
+  pt)
+}
 
 const Root = () => {
-  const [state, setstate] = useState(0)
-
   return (
-    <TranslationProvider translation={translations[state]}>
-      <App onLangChange={(i: number) => {
-        console.log(state);
-        setstate(i)
-      }} />
-      <h1>{state}</h1>
-    </TranslationProvider>
+    <>
+      <TranslationProvider translation={enUS}>
+        <App />
+      </TranslationProvider>
+    </>
   )
 }
 

@@ -8,3 +8,4 @@ build/*
 !build/icons
 
 package-lock.json
+test.http

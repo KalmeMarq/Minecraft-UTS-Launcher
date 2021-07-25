@@ -1,0 +1,76 @@
+.tab {
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  padding: 0 0.9rem;
+  color: white;
+  height: 100%;
+  transition-property: font;
+  font-family: 'Noto Sans';
+  transition-duration: 100ms;
+}
+
+.tab.active {
+  color: white;
+  font-family: 'Noto Sans Bold';
+  pointer-events: none;
+}
+
+.tab::before {
+  display: block;
+  content: attr(title);
+  font-family: 'Noto Sans Bold';
+  overflow: hidden;
+  visibility: hidden;
+  height: 0px;
+}
+
+.tab::after {
+  content: '';
+  display: flex;
+  place-items: center;
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  background: green;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+}
+
+.tab.active::after {
+  width: 20px;
+  transition-property: width;
+  transition-duration: 200ms;
+}
+
+.tab:focus-visible {
+  color: white;
+  font-family: 'Noto Sans Bold';
+}
+
+.tab:focus-visible::after {
+  background: white;
+  font-weight: 700;
+  letter-spacing: -0.018027em;
+}
+
+.buta-s {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: white;
+  background: hsl(147, 88%, 29%);
+  font-family: 'Noto Sans';
+  font-weight: 550;
+  padding: 0.4rem 2rem;
+  margin-right: 20px;
+  margin-top: 6px;
+  font-size: 0.84rem;
+  cursor: pointer;
+
+  &:hover {
+    background: hsl(147, 88%, 44%);
+  }
+}

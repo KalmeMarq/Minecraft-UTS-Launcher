@@ -1,0 +1,32 @@
+.news-route {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.wrapper {
+  display: inline-block;
+  position: relative;
+  margin: auto;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+}
+
+.div1, .div2 {
+  border: 1px solid #0EA2E8;
+  margin: 2px;
+  padding: 1px 5px;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.filter-container {
+  width: 100%;
+  height: 82px;
+  border-bottom: 1px solid hsl(0, 0%, 36%);
+}

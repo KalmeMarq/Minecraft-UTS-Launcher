@@ -1,0 +1,24 @@
+
+
+.header-logo {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background: url('./../../../../assets/bg-wool-dark.png');
+  background-position: right;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  box-shadow: 0 4px 2px 0 hsla(0, 0%, 0%, 0.45);
+  z-index: 0;
+  background-position-x: right;
+  background-position-y: top;
+}
+
+.pos-logo {
+  position: absolute;
+  image-rendering: optimizeQuality;
+  max-width: 410px;
+  left: 50%;
+  bottom: -14px;
+  transform: translate(-50%);
+}

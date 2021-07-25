@@ -1,0 +1,281 @@
+.play-subroute {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: auto;
+  height: 100%;
+
+  section {
+    position: relative;
+    width: 100%;
+    height: 79%;
+    min-height: 79%;
+    max-height: 79%;
+    margin-top: -40px;
+    background: url(../../../../assets/cover_bgs/Caves_&_CliffsUpdate.png);
+    image-rendering: optimizeQuality;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+
+  main {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    background: #262626;
+    box-shadow: 0 2px 4px #00000077;
+    display: flex;
+    place-items: center;
+    z-index: 100;
+  }
+}
+
+.buta {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%);
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  width: calc(60px * 4.4);
+  height: 57px;
+  outline: none;
+  z-index: 1100;
+  cursor: pointer;
+  
+  &-inside {
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    // background: hsl(149, 88%, 29%);
+    padding: 0.7rem 0;
+    background: url(../../../../assets/others/MainPagePlayButton.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  }
+
+  .buta-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'MinecraftTen';
+    text-shadow: 0 2px hsl(0, 0%, 18%);
+  }
+
+  &:focus .buta-inside {
+    background: url(../../../../assets/others/MainPagePlayButtonFocusOver.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  }
+
+  &:hover .buta-inside {
+    background: url(../../../../assets/others/MainPagePlayButtonOver.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  }
+
+  &:hover .buta-text {
+    transform-origin: center;
+    transform: translate(-50%, -50%) scale(1.028);
+  }
+
+  &:active .buta-inside {
+    font-size: 1.54rem;
+    background: url(../../../../assets/others/MainPagePlayButtonPressed.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  }
+
+  .buta-inside::before {
+    display: block;
+    content: attr(title);
+    font-family: 'MinecraftTen';
+    font-size: 1.57rem;
+    overflow: hidden;
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.java-news {
+  width: 100%;
+}
+
+.userName {
+  position: absolute;
+  font-family: 'Noto Sans Bold';
+  padding: 0 1rem;
+  color: white;
+  font-size: 14px;
+  right: 0;
+}
+
+.animlogo {
+  position: absolute;
+  max-width: 240px;
+  width: 240px;
+  left: 50%;
+  image-rendering: optimizeQuality;
+  transform: translate(-50%);
+  height: auto;
+  animation: logoSlideIn 500ms forwards ease;
+}
+
+.java-news {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 1rem 0;
+  gap: 25px;
+}
+
+.buta-ss {
+  color: white;
+  background: hsl(147, 84%, 26%);
+  font-family: 'Noto Sans Bold';
+  box-sizing: content-box;
+  padding: 0.5rem 1.4rem;
+  margin-top: 6px;
+  font-size: 12.5px;
+  width: max-content;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+
+  &:hover {
+    background: hsl(147, 88%, 44%);
+  }
+
+  &:active {
+    background: hsl(147, 88%, 20%);
+    border: 1px solid white;
+  }
+
+  &:focus-visible {
+    border: 1px solid white;
+  }
+}
+
+@keyframes logoSlideIn {
+  0% { transform: translate(-50%) translateY(0px); }
+  1% { transform: translate(-50%) translateY(0.518258554513217px); }
+  2% { transform: translate(-50%) translateY(1.985325748622415px); }
+  3% { transform: translate(-50%) translateY(4.269063786809342px); }
+  4% { transform: translate(-50%) translateY(7.2384453951480845px); }
+  5% { transform: translate(-50%) translateY(10.765647388701291px); }
+  6% { transform: translate(-50%) translateY(14.727853233296987px); }
+  7% { transform: translate(-50%) translateY(19.00876697935002px); }
+  8% { transform: translate(-50%) translateY(23.499845564876388px); }
+  9% { transform: translate(-50%) translateY(28.10126046345793px); }
+  10% { transform: translate(-50%) translateY(32.72260299573341px); }
+  11% { transform: translate(-50%) translateY(37.28335034529948px); }
+  12% { transform: translate(-50%) translateY(41.713111445762905px); }
+  13% { transform: translate(-50%) translateY(45.951673466533855px); }
+  14% { transform: translate(-50%) translateY(49.94887065824636px); }
+  15% { transform: translate(-50%) translateY(53.66429786658972px); }
+  16% { transform: translate(-50%) translateY(57.066891131443455px); }
+  17% { transform: translate(-50%) translateY(60.134397504428875px); }
+  18% { transform: translate(-50%) translateY(62.85275559144203px); }
+  19% { transform: translate(-50%) translateY(65.21540740678897px); }
+  20% { transform: translate(-50%) translateY(67.22256096096092px); }
+  21% { transform: translate(-50%) translateY(68.8804216422534px); }
+  22% { transform: translate(-50%) translateY(70.20040893871737px); }
+  23% { transform: translate(-50%) translateY(71.19837342414638px); }
+  24% { transform: translate(-50%) translateY(71.89382723976625px); }
+  25% { transform: translate(-50%) translateY(72.30919957849426px); }
+  26% { transform: translate(-50%) translateY(72.46912695398733px); }
+  27% { transform: translate(-50%) translateY(72.39978634139776px); }
+  28% { transform: translate(-50%) translateY(72.12827763619326px); }
+  29% { transform: translate(-50%) translateY(71.68206031317142px); }
+  30% { transform: translate(-50%) translateY(71.08844769776793px); }
+  31% { transform: translate(-50%) translateY(70.3741609001681px); }
+  32% { transform: translate(-50%) translateY(69.56494322038138px); }
+  33% { transform: translate(-50%) translateY(68.68523471688486px); }
+  34% { transform: translate(-50%) translateY(67.75790564724119px); }
+  35% { transform: translate(-50%) translateY(66.80404663806357px); }
+  36% { transform: translate(-50%) translateY(65.84281272318974px); }
+  37% { transform: translate(-50%) translateY(64.89131780012502px); }
+  38% { transform: translate(-50%) translateY(63.96457559102081px); }
+  39% { transform: translate(-50%) translateY(63.075482849394724px); }
+  40% { transform: translate(-50%) translateY(62.23484031988471px); }
+  41% { transform: translate(-50%) translateY(61.45140682695817px); }
+  42% { transform: translate(-50%) translateY(60.73198183029695px); }
+  43% { transform: translate(-50%) translateY(60.08151182966069px); }
+  44% { transform: translate(-50%) translateY(59.503216120214965px); }
+  45% { transform: translate(-50%) translateY(58.998727580327014px); }
+  46% { transform: translate(-50%) translateY(58.568244407511685px); }
+  47% { transform: translate(-50%) translateY(58.21068899463886px); }
+  48% { transform: translate(-50%) translateY(57.923870448177226px); }
+  49% { transform: translate(-50%) translateY(57.70464758414282px); }
+  50% { transform: translate(-50%) translateY(57.54908958715126px); }
+  51% { transform: translate(-50%) translateY(57.45263187582572px); }
+  52% { transform: translate(-50%) translateY(57.410225076806995px); }
+  53% { transform: translate(-50%) translateY(57.41647536354215px); }
+  54% { transform: translate(-50%) translateY(57.46577475946892px); }
+  55% { transform: translate(-50%) translateY(57.55242033353588px); }
+  56% { transform: translate(-50%) translateY(57.6707215253512px); }
+  57% { transform: translate(-50%) translateY(57.81509512454245px); }
+  58% { transform: translate(-50%) translateY(57.98014769176422px); }
+  59% { transform: translate(-50%) translateY(58.16074544552107px); }
+  60% { transform: translate(-50%) translateY(58.352071848526776px); }
+  61% { transform: translate(-50%) translateY(58.549673309217866px); }
+  62% { transform: translate(-50%) translateY(58.74949356832963px); }
+  63% { transform: translate(-50%) translateY(58.94789746763363px); }
+  64% { transform: translate(-50%) translateY(59.14168489893687px); }
+  65% { transform: translate(-50%) translateY(59.32809580750629px); }
+  66% { transform: translate(-50%) translateY(59.50480717673932px); }
+  67% { transform: translate(-50%) translateY(59.66992295190594px); }
+  68% { transform: translate(-50%) translateY(59.82195787206529px); }
+  69% { transform: translate(-50%) translateY(59.95981617284824px); }
+  70% { transform: translate(-50%) translateY(60.08276610080613px); }
+  71% { transform: translate(-50%) translateY(60.19041114458995px); }
+  72% { transform: translate(-50%) translateY(60.282658841462116px); }
+  73% { transform: translate(-50%) translateY(60.35968796163px); }
+  74% { transform: translate(-50%) translateY(60.42191480961919px); }
+  75% { transform: translate(-50%) translateY(60.46995931326818px); }
+  76% { transform: translate(-50%) translateY(60.50461149869413px); }
+  77% { transform: translate(-50%) translateY(60.52679887538151px); }
+  78% { transform: translate(-50%) translateY(60.53755518086002px); }
+  79% { transform: translate(-50%) translateY(60.53799086058611px); }
+  80% { transform: translate(-50%) translateY(60.529265586780234px); }
+  81% { transform: translate(-50%) translateY(60.512563051090126px); }
+  82% { transform: translate(-50%) translateY(60.48906820088196px); }
+  83% { transform: translate(-50%) translateY(60.45994702837249px); }
+  84% { transform: translate(-50%) translateY(60.42632896623004px); }
+  85% { transform: translate(-50%) translateY(60.38929189306285px); }
+  86% { transform: translate(-50%) translateY(60.34984970762536px); }
+  87% { transform: translate(-50%) translateY(60.30894239172192px); }
+  88% { transform: translate(-50%) translateY(60.267428448687745px); }
+  89% { transform: translate(-50%) translateY(60.22607957688321px); }
+  90% { transform: translate(-50%) translateY(60.18557741567986px); }
+  91% { transform: translate(-50%) translateY(60.14651218469392px); }
+  92% { transform: translate(-50%) translateY(60.109383025225746px); }
+  93% { transform: translate(-50%) translateY(60.07459984563831px); }
+  94% { transform: translate(-50%) translateY(60.04248646935578px); }
+  95% { transform: translate(-50%) translateY(60.013284884866195px); }
+  96% { transform: translate(-50%) translateY(59.98716040113425px); }
+  97% { transform: translate(-50%) translateY(59.96420751872606px); }
+  98% { transform: translate(-50%) translateY(59.944456336277234px); }
+  99% { transform: translate(-50%) translateY(59.92787932326446px); }
+  100% { transform: translate(-50%) translateY(60px); }
+}
